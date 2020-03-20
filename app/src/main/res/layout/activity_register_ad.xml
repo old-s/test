@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--基本信息-->
+            <TextView
+                style="@style/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30"
+                android:drawableLeft="@mipmap/ic_line"
+                android:drawablePadding="@dimen/dimen_6"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_15"
+                android:text="基本信息" />
+
+            <LinearLayout style="@style/layout_white_40">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="公司名称" />
+
+                <EditText
+                    android:id="@+id/edt_company"
+                    style="@style/txt_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:hint="输入公司名称" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="品牌" />
+
+                <EditText
+                    android:id="@+id/edt_brand"
+                    style="@style/txt_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:hint="输入品牌名称" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="联系电话" />
+
+                <EditText
+                    android:id="@+id/edt_tel"
+                    style="@style/txt_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:hint="输入联系电话"
+                    android:inputType="number"
+                    android:maxLength="11" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="所在地区" />
+
+                <TextView
+                    android:id="@+id/txt_address"
+                    style="@style/txt_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    android:hint="请选择省市区" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="详细地址" />
+
+                <EditText
+                    android:id="@+id/edt_address"
+                    style="@style/txt_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:hint="输入详细地址" />
+            </LinearLayout>
+
+            <!--收款信息-->
+            <TextView
+                style="@style/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30"
+                android:drawableLeft="@mipmap/ic_line"
+                android:drawablePadding="@dimen/dimen_6"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_15"
+                android:text="汇款信息" />
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="名称" />
+
+                <EditText
+                    android:id="@+id/edt_skname"
+                    style="@style/txt_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:hint="输入公司名称" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="开户银行" />
+
+                <EditText
+                    android:id="@+id/edt_bank"
+                    style="@style/txt_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:hint="输入开户银行" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="账号" />
+
+                <EditText
+                    android:id="@+id/edt_account"
+                    style="@style/txt_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:hint="输入银行账号" />
+            </LinearLayout>
+            <!--证照信息-->
+            <TextView
+                style="@style/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30"
+                android:drawableLeft="@mipmap/ic_line"
+                android:drawablePadding="@dimen/dimen_6"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_15"
+                android:text="证照信息" />
+
+            <LinearLayout
+                style="@style/layout_white_height"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="营业执照" />
+
+                <ImageView
+                    android:id="@+id/img_yyzz"
+                    android:layout_width="@dimen/dimen_50"
+                    android:layout_height="@dimen/dimen_50"
+                    android:src="@mipmap/ic_add_pic" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_height"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="联系人身份证" />
+
+                <ImageView
+                    android:id="@+id/img_sfz_z"
+                    android:layout_width="@dimen/dimen_80"
+                    android:layout_height="@dimen/dimen_50"
+                    android:src="@mipmap/ic_sfz_z" />
+
+                <ImageView
+                    android:id="@+id/img_sfz_f"
+                    android:layout_width="@dimen/dimen_80"
+                    android:layout_height="@dimen/dimen_50"
+                    android:layout_marginLeft="@dimen/dimen_15"
+                    android:src="@mipmap/ic_sfz_f" />
+
+
+            </LinearLayout>
+            <!--公司制定联系（管理）人-->
+            <TextView
+                style="@style/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30"
+                android:drawableLeft="@mipmap/ic_line"
+                android:drawablePadding="@dimen/dimen_6"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_15"
+                android:text="公司制定联系（管理）人" />
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="联系人姓名" />
+
+                <EditText
+                    android:id="@+id/edt_nickname"
+                    style="@style/txt_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:hint="输入联系人姓名" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="联系人邮箱" />
+
+                <EditText
+                    android:id="@+id/edt_email"
+                    style="@style/txt_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:hint="输入联系人邮箱" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="联系人手机" />
+
+                <EditText
+                    android:id="@+id/edt_phone"
+                    style="@style/txt_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:hint="输入联系人手机号"
+                    android:inputType="number"
+                    android:maxLength="11" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="微信号" />
+
+                <EditText
+                    android:id="@+id/edt_wechat"
+                    style="@style/txt_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:hint="输入微信号" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="手机验证码" />
+
+                <EditText
+                    android:id="@+id/edt_code"
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:hint="输入短信验证码"
+                    android:inputType="number"
+                    android:maxLength="4" />
+
+                <TextView
+                    android:id="@+id/txt_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_blue_corner_5"
+                    android:paddingLeft="@dimen/dimen_6"
+                    android:paddingTop="@dimen/dimen_2"
+                    android:paddingRight="@dimen/dimen_6"
+                    android:paddingBottom="@dimen/dimen_2"
+                    android:text="获取验证码"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_height"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="证明文件" />
+
+                <ImageView
+                    android:id="@+id/img_zmwj"
+                    android:layout_width="@dimen/dimen_50"
+                    android:layout_height="@dimen/dimen_50"
+                    android:src="@mipmap/ic_add_pic" />
+
+                <TextView
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/txt_look_zmwj"
+                    style="@style/txt_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:drawableLeft="@mipmap/ic_look"
+                    android:drawablePadding="@dimen/dimen_3"
+                    android:gravity="right"
+                    android:text="查看模板" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/txt_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_15"
+                android:drawableLeft="@mipmap/ic_declare"
+                android:drawablePadding="@dimen/dimen_3"
+                android:text="信息安全生命：所填信息仅限于线上审核，请放心填写" />
+
+            <TextView
+                android:id="@+id/txt_submit"
+                style="@style/txt_blue"
+                android:layout_marginTop="@dimen/size_10"
+                android:layout_marginBottom="@dimen/dimen_30"
+                android:text="提交" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

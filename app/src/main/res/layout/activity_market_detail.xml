@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top" />
+
+    <ScrollView
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.demo.ctw.ui.view.BannerAdView
+                android:id="@+id/view_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_200" />
+
+            <TextView
+                android:id="@+id/txt_mName"
+                style="@style/txt_white_40" />
+            <!--基本信息-->
+            <TextView
+                style="@style/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:drawableLeft="@mipmap/ic_line"
+                android:drawablePadding="@dimen/dimen_6"
+                android:gravity="center_vertical"
+                android:text="基本信息" />
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="超市品牌" />
+
+                <TextView
+                    android:id="@+id/txt_brand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="店名" />
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="所在地区" />
+
+                <TextView
+                    android:id="@+id/txt_region"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="超市地址" />
+
+                <TextView
+                    android:id="@+id/txt_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="超市类型" />
+
+                <TextView
+                    android:id="@+id/txt_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="超市营业面积" />
+
+                <TextView
+                    android:id="@+id/txt_area"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    android:layout_weight="1"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/size_14" />
+
+                <TextView
+                    android:id="@+id/txt_look_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="查看证明文件"
+                    android:textColor="@color/app"
+                    android:textSize="@dimen/size_13" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="推车数量" />
+
+                <TextView
+                    android:id="@+id/txt_shopnum"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    android:layout_weight="1"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/size_14" />
+
+                <TextView
+                    android:id="@+id/txt_look_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="查看证明文件"
+                    android:textColor="@color/app"
+                    android:textSize="@dimen/size_13" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="A/B面尺寸" />
+
+                <TextView
+                    android:id="@+id/txt_absize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="C面尺寸" />
+
+                <TextView
+                    android:id="@+id/txt_csize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="购物框数量" />
+
+                <TextView
+                    android:id="@+id/txt_advnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="平均日客流量" />
+
+                <TextView
+                    android:id="@+id/txt_kll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="年营业额" />
+
+                <TextView
+                    android:id="@+id/txt_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+            <!--证照信息-->
+            <TextView
+                style="@style/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:drawableLeft="@mipmap/ic_line"
+                android:drawablePadding="@dimen/dimen_6"
+                android:gravity="center_vertical"
+                android:text="证照信息" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_15"
+                android:paddingTop="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_15"
+                android:paddingBottom="@dimen/dimen_10">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="营业执照" />
+
+                <ImageView
+                    android:id="@+id/img_yyzz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_1"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dimen_15"
+                android:paddingTop="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_15"
+                android:paddingBottom="@dimen/dimen_20">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="店面照片" />
+
+                <com.demo.ctw.ui.view.NoScrollGridView
+                    android:id="@+id/view_dmzp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:horizontalSpacing="@dimen/dimen_zero_5"
+                    android:numColumns="2"
+                    android:verticalSpacing="@dimen/dimen_8" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

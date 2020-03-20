@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="C1">#000000</color>
+    <color name="C2">#1b1b1b</color>
+    <color name="C3">#666666</color>
+
+    <color name="white">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="divide">#F5F5F5</color>
+</resources>

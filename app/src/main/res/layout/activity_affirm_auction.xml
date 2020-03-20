@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top" />
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.baidu.mapapi.map.MapView
+                android:id="@+id/view_map"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_200"
+                android:background="@color/divide" />
+            <!--基本信息-->
+            <TextView
+                style="@style/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:drawableLeft="@mipmap/ic_line"
+                android:drawablePadding="@dimen/dimen_6"
+                android:gravity="center_vertical"
+                android:text="基本信息" />
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="营业总面积：" />
+
+                <TextView
+                    android:id="@+id/txt_area"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    android:layout_weight="1"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="手推车数量：" />
+
+                <TextView
+                    android:id="@+id/txt_shopnum"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    android:layout_weight="1"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A/B面尺寸：" />
+
+                <TextView
+                    android:id="@+id/txt_absize"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    android:layout_weight="1"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="C面尺寸：" />
+
+                <TextView
+                    android:id="@+id/txt_csize"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    android:layout_weight="1"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="@dimen/dimen_90"
+                    android:layout_height="wrap_content"
+                    android:text="购物框数量：" />
+
+                <TextView
+                    android:id="@+id/txt_advnum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+
+            <!--选择投放信息-->
+            <TextView
+                style="@style/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:drawableLeft="@mipmap/ic_line"
+                android:drawablePadding="@dimen/dimen_6"
+                android:gravity="center_vertical"
+                android:text="选择投放信息" />
+
+            <LinearLayout
+                android:id="@+id/layout_years"
+                style="@style/layout_white_40">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择投放年份：" />
+
+                <TextView
+                    android:id="@+id/txt_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@mipmap/ic_right"
+                    android:drawablePadding="@dimen/dimen_8"
+                    android:gravity="right"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_height"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择投放月份：" />
+
+                <com.demo.ctw.ui.view.NoScrollGridView
+                    android:id="@+id/view_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:horizontalSpacing="@dimen/dimen_8"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="4"
+                    android:verticalSpacing="@dimen/dimen_6" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="实际使用推车数量：" />
+
+                <TextView
+                    android:id="@+id/txt_shopnum_real"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    android:layout_weight="1"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="实际使用购物车数量：" />
+
+                <TextView
+                    android:id="@+id/txt_advnum_real"
+                    android:layout_width="@dimen/dimen_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_3"
+                    android:layout_weight="1"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/layout_white_height"
+                android:layout_marginTop="@dimen/dimen_1">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择投放位置：" />
+
+                <com.demo.ctw.ui.view.NoScrollGridView
+                    android:id="@+id/view_tfwz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10"
+                    android:horizontalSpacing="@dimen/dimen_8"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="4"
+                    android:verticalSpacing="@dimen/dimen_6" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_tfwz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_tfwz_a" />
+
+            <LinearLayout
+                style="@style/layout_white_40"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="截止日期：" />
+
+                <TextView
+                    android:id="@+id/txt_finishtime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@color/C2"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+
+            <!--我要出价-->
+            <TextView
+                style="@style/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_15"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_15"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:drawableLeft="@mipmap/ic_line"
+                android:drawablePadding="@dimen/dimen_6"
+                android:gravity="center_vertical"
+                android:text="我要出价" />
+
+            <LinearLayout style="@style/layout_white_height">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="出价：" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_minus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_minus" />
+
+                    <TextView
+                        android:id="@+id/txt_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:layout_marginRight="@dimen/dimen_10"
+                        android:text="1"
+                        android:textColor="@color/app"
+                        android:textSize="@dimen/size_16"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/img_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_add" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout style="@style/layout_white_40">
+
+                <TextView
+                    style="@style/txt_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总价：" />
+
+                <TextView
+                    android:id="@+id/txt_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:textColor="@color/app"
+                    android:textSize="@dimen/size_14" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_money"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:textColor="@color/app"
+            android:textSize="@dimen/size_14" />
+
+        <TextView
+            android:id="@+id/txt_affirm"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/app"
+            android:gravity="center"
+            android:text="确认竞拍"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_14" />
+    </LinearLayout>
+</LinearLayout>

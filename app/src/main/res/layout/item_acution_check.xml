@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_auction_check"
+    android:button="@color/transparent"
+    android:gravity="center"
+    android:text="电梯广告"
+    android:clickable="false"
+    android:focusable="false"
+    android:id="@+id/txt_info"
+    android:textColor="@color/bg_check"
+    android:textSize="@dimen/size_12" />

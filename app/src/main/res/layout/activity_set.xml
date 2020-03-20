@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top" />
+
+    <LinearLayout
+        android:id="@+id/layout_status"
+        style="@style/layout_white_40"
+        android:layout_marginBottom="@dimen/dimen_1">
+
+        <TextView
+            style="@style/txt_msg"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="超市状态" />
+
+        <ImageView style="@style/img_enter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_change"
+        style="@style/layout_white_40">
+
+        <TextView
+            style="@style/txt_msg"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="修改密码" />
+
+        <ImageView style="@style/img_enter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_about"
+        style="@style/layout_white_40"
+        android:layout_marginTop="@dimen/dimen_1">
+
+        <TextView
+            style="@style/txt_msg"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="关于我们" />
+
+        <ImageView style="@style/img_enter" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_clear"
+        style="@style/layout_white_40"
+        android:layout_marginTop="@dimen/dimen_1">
+
+        <TextView
+            style="@style/txt_msg"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="清除缓存" />
+
+        <TextView
+            android:id="@+id/txt_clear"
+            style="@style/txt_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView style="@style/img_enter" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="@color/app"
+        android:textSize="@dimen/size_14" />
+</LinearLayout>

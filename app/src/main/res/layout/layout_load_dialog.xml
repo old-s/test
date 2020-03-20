@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dimen_50"
+    android:layout_gravity="center"
+    android:background="@color/C3"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/dimen_10">
+
+    <com.demo.ctw.loading.CircularProgressBar
+        android:id="@+id/cpb_load_dialog"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:indeterminateOnly="false"
+        app:cpb_stroke_width="@dimen/dimen_2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:text="@string/loading"
+        android:textColor="@color/white"
+        android:textSize="@dimen/size_14" />
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/windowBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.demo.ctw.ui.view.BannerAdView
+            android:id="@+id/view_banner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_150" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/dimen_15"
+            android:paddingRight="@dimen/dimen_15">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_25"
+                android:layout_height="@dimen/dimen_25"
+                android:src="@mipmap/ic_notice" />
+
+            <ViewFlipper
+                android:id="@+id/view_filpper"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_5"
+                android:layout_marginRight="@dimen/dimen_5"
+                android:layout_weight="1"
+                android:autoStart="true"
+                android:flipInterval="3000"
+                android:inAnimation="@anim/filpper_in"
+                android:outAnimation="@anim/filpper_out" />
+
+            <TextView
+                android:id="@+id/txt_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更多"
+                android:textColor="@color/app"
+                android:textSize="@dimen/size_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_35"
+            android:layout_marginLeft="@dimen/size_15"
+            android:layout_marginRight="@dimen/size_15"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/txt_title"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/ic_line"
+                android:drawablePadding="@dimen/dimen_6"
+                android:text="新闻" />
+
+            <TextView
+                android:id="@+id/txt_news"
+                style="@style/txt_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更多" />
+        </LinearLayout>
+
+        <com.demo.ctw.ui.view.NoScrollListView
+            android:id="@+id/list_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:divider="@color/windowBackground"
+            android:dividerHeight="@dimen/dimen_zero_5"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_35"
+            android:layout_marginLeft="@dimen/size_15"
+            android:layout_marginRight="@dimen/size_15"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/txt_title"
+                android:layout_width="@dimen/dimen_0"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/ic_line"
+                android:drawablePadding="@dimen/dimen_6"
+                android:text="合作案例" />
+
+            <TextView
+                android:id="@+id/txt_cases"
+                style="@style/txt_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更多" />
+        </LinearLayout>
+
+        <com.demo.ctw.ui.view.NoScrollGridView
+            android:id="@+id/grid_cases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:horizontalSpacing="@dimen/dimen_10"
+            android:listSelector="@color/transparent"
+            android:numColumns="2"
+            android:padding="@dimen/dimen_15"
+            android:scrollbars="none"
+            android:verticalSpacing="@dimen/dimen_12" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top" />
+
+    <LinearLayout style="@style/layout_white_40">
+
+        <TextView
+            style="@style/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="公司名称" />
+
+        <EditText
+            android:id="@+id/edt_company"
+            style="@style/txt_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:gravity="right"
+            android:hint="请输入公司名称" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_yyzz"
+        style="@style/layout_white_40"
+        android:layout_marginTop="@dimen/dimen_1">
+
+        <TextView
+            style="@style/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="营业执照照片" />
+
+        <TextView
+            android:id="@+id/txt_yyzz"
+            style="@style/txt_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:drawableRight="@mipmap/ic_right"
+            android:drawablePadding="@dimen/dimen_5"
+            android:gravity="right"
+            android:hint="请选择营业执照照片上传" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_white_40"
+        android:layout_marginTop="@dimen/dimen_5">
+
+        <TextView
+            style="@style/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="管理员姓名" />
+
+        <EditText
+            android:id="@+id/edt_user"
+            style="@style/txt_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:gravity="right"
+            android:hint="请输入管理员姓名" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_sfz"
+        style="@style/layout_white_40"
+        android:layout_marginTop="@dimen/dimen_1">
+
+        <TextView
+            style="@style/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="身份证照片" />
+
+        <TextView
+            android:id="@+id/txt_sfz"
+            style="@style/txt_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:drawableRight="@mipmap/ic_right"
+            android:drawablePadding="@dimen/dimen_5"
+            android:gravity="right"
+            android:hint="请选择身份证照片上传" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_white_40"
+        android:layout_marginTop="@dimen/dimen_10">
+
+        <TextView
+            style="@style/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银行卡号" />
+
+        <EditText
+            android:id="@+id/edt_yhkh"
+            style="@style/txt_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:gravity="right"
+            android:hint="请输入银行卡号" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_white_40"
+        android:layout_marginTop="@dimen/dimen_1">
+
+        <TextView
+            android:id="@+id/layout_khh"
+            style="@style/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开户行" />
+
+        <TextView
+            android:id="@+id/txt_khh"
+            style="@style/txt_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:drawableRight="@mipmap/ic_right"
+            android:drawablePadding="@dimen/dimen_5"
+            android:gravity="right"
+            android:hint="请选择开户行" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_white_40"
+        android:layout_marginTop="@dimen/dimen_10">
+
+        <TextView
+            style="@style/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话" />
+
+        <EditText
+            android:id="@+id/edt_tel"
+            style="@style/txt_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:gravity="right"
+            android:hint="请输入电话号"
+            android:inputType="number"
+            android:maxLength="11" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_white_40"
+        android:layout_marginTop="@dimen/dimen_1">
+
+        <TextView
+            style="@style/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="邮箱" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            style="@style/txt_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:gravity="right"
+            android:hint="请输入邮箱"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layout_white_40"
+        android:layout_marginTop="@dimen/dimen_1">
+
+        <TextView
+            style="@style/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微信" />
+
+        <EditText
+            android:id="@+id/edt_wechat"
+            style="@style/txt_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:gravity="right"
+            android:hint="请输入微信号" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_0"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/txt_submit"
+        style="@style/txt_blue"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:text="提交" />
+</LinearLayout>

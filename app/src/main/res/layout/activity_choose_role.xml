@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top" />
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/dimen_35"-->
+    <!--android:src="@mipmap/ic_role_wy" />-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/layout_wy"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/dimen_10"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/view_check_wy"-->
+    <!--android:layout_width="@dimen/size_15"-->
+    <!--android:layout_height="@dimen/size_15"-->
+    <!--android:background="@drawable/bg_check"-->
+    <!--android:button="@color/transparent"-->
+    <!--android:checked="true"-->
+    <!--android:clickable="false" />-->
+
+    <!--<TextView-->
+    <!--style="@style/txt_title"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/dimen_5"-->
+    <!--android:text="物业客户" />-->
+    <!--</LinearLayout>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/dimen_20"-->
+    <!--android:src="@mipmap/ic_role_gg" />-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/layout_gg"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/dimen_10"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/view_check_gg"-->
+    <!--android:layout_width="@dimen/size_15"-->
+    <!--android:layout_height="@dimen/size_15"-->
+    <!--android:background="@drawable/bg_check"-->
+    <!--android:button="@color/transparent"-->
+    <!--android:checked="false"-->
+    <!--android:clickable="false" />-->
+
+    <!--<TextView-->
+    <!--style="@style/txt_title"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/dimen_5"-->
+    <!--android:text="广告主" />-->
+    <!--</LinearLayout>-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/dimen_20"-->
+    <!--android:src="@mipmap/ic_role_wy" />-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/layout"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="@dimen/dimen_10"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<CheckBox-->
+    <!--android:id="@+id/view_check"-->
+    <!--android:layout_width="@dimen/size_15"-->
+    <!--android:layout_height="@dimen/size_15"-->
+    <!--android:background="@drawable/bg_check"-->
+    <!--android:button="@color/transparent"-->
+    <!--android:checked="false"-->
+    <!--android:clickable="false" />-->
+
+    <!--<TextView-->
+    <!--style="@style/txt_title"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/dimen_5"-->
+    <!--android:text="物业总部" />-->
+    <!--</LinearLayout>-->
+
+    <!--<RadioGroup-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/dimen_0"-->
+    <!--android:layout_marginTop="@dimen/dimen_30"-->
+    <!--android:layout_marginBottom="@dimen/dimen_30"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/btn_cs"-->
+    <!--android:layout_width="@dimen/dimen_100"-->
+    <!--android:layout_height="@dimen/dimen_0"-->
+    <!--android:layout_weight="1"-->
+    <!--android:button="@drawable/bg_check"-->
+    <!--android:checked="true"-->
+    <!--android:paddingLeft="@dimen/dimen_6"-->
+    <!--android:text="超         市"-->
+    <!--android:textColor="@color/C2"-->
+    <!--android:textSize="@dimen/size_18" />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/btn_cszb"-->
+    <!--android:layout_width="@dimen/dimen_100"-->
+    <!--android:layout_height="@dimen/dimen_0"-->
+    <!--android:layout_weight="1"-->
+    <!--android:button="@drawable/bg_check"-->
+    <!--android:checked="false"-->
+    <!--android:paddingLeft="@dimen/dimen_6"-->
+    <!--android:text="超市总部"-->
+    <!--android:textColor="@color/C2"-->
+    <!--android:textSize="@dimen/size_18" />-->
+
+    <!--<RadioButton-->
+    <!--android:id="@+id/btn_ggz"-->
+    <!--android:layout_width="@dimen/dimen_100"-->
+    <!--android:layout_height="@dimen/dimen_0"-->
+    <!--android:layout_weight="1"-->
+    <!--android:button="@drawable/bg_check"-->
+    <!--android:checked="false"-->
+    <!--android:paddingLeft="@dimen/dimen_6"-->
+    <!--android:text="广  告  主"-->
+    <!--android:textColor="@color/C2"-->
+    <!--android:textSize="@dimen/size_18" />-->
+    <!--</RadioGroup>-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_0"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginBottom="@dimen/dimen_20"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_cs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_80"
+                android:layout_height="@dimen/dimen_80"
+                android:src="@mipmap/ic_role_gg" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/view_cs"
+                    android:layout_width="@dimen/dimen_16"
+                    android:layout_height="@dimen/dimen_16"
+                    android:background="@drawable/bg_check"
+                    android:button="@color/transparent"
+                    android:checked="true"
+                    android:clickable="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_market"
+                    android:layout_marginLeft="@dimen/dimen_8"
+                    android:gravity="center_vertical"
+                    android:text="超市" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_cszb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_80"
+                android:layout_height="@dimen/dimen_80"
+                android:src="@mipmap/ic_role_wy" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/view_cszb"
+                    android:layout_width="@dimen/dimen_16"
+                    android:layout_height="@dimen/dimen_16"
+                    android:background="@drawable/bg_check"
+                    android:button="@color/transparent"
+                    android:checked="false"
+                    android:clickable="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_market"
+                    android:layout_marginLeft="@dimen/dimen_8"
+                    android:gravity="center_vertical"
+                    android:text="超市总部" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_ggz"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dimen_80"
+                android:layout_height="@dimen/dimen_80"
+                android:src="@mipmap/ic_role" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/view_ggz"
+                    android:layout_width="@dimen/dimen_16"
+                    android:layout_height="@dimen/dimen_16"
+                    android:background="@drawable/bg_check"
+                    android:button="@color/transparent"
+                    android:checked="false"
+                    android:clickable="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_market"
+                    android:layout_marginLeft="@dimen/dimen_8"
+                    android:gravity="center_vertical"
+                    android:text="广告主" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txt_next"
+        style="@style/txt_blue"
+        android:layout_marginBottom="@dimen/dimen_30"
+        android:text="下一步" />
+</LinearLayout>

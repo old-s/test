@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.demo.ctw.ui.view.BorderTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/txt_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/dimen_15"
+    android:paddingTop="@dimen/dimen_4"
+    android:paddingRight="@dimen/dimen_15"
+    android:paddingBottom="@dimen/dimen_4"
+    app:strokeColor="@color/C5"
+    app:strokeWidth="@dimen/dimen_zero_5" />

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:drawableLeft="@mipmap/ic_line"
+        android:drawablePadding="@dimen/dimen_6"
+        android:gravity="center_vertical"
+        android:text="订单明细" />
+
+    <LinearLayout style="@style/layout_white_40">
+
+        <TextView
+            style="@style/txt_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购物车合计：" />
+
+        <TextView
+            android:id="@+id/txt_totalcount"
+            style="@style/txt_msg"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/layout_white_40">
+
+        <TextView
+            style="@style/txt_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总计：" />
+
+        <TextView
+            android:id="@+id/txt_total"
+            style="@style/txt_msg"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/layout_white_40">
+
+        <TextView
+            style="@style/txt_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="诚意金：" />
+
+        <TextView
+            android:id="@+id/txt_money"
+            android:layout_width="@dimen/dimen_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/app"
+            android:textSize="@dimen/size_14" />
+    </LinearLayout>
+</LinearLayout>
